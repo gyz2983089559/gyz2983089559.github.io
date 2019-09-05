@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="https://gyz2983089559.github.io">
   <title>我的第一篇博客文章 | Code Coulson</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.Hexo的基本命令hexo generate –生成个人博客所需的静态页面 hexo server –本地预览 hexo deploy –部署我们的个人博客 hexo clean –清除缓存 这几个命令都能用首字母缩写完成 hexo g –generate hexo s –server hexo d –deploy 2.写文章的需要用到下面的命令hexo new “postName” –新建文">
+  <meta name="description" content="1.Hexo的基本命令 hexo generate --生成个人博客所需的静态页面  hexo server --本地预览  hexo deploy --部署我们的个人博客  hexo clean --清除缓存  这几个命令都能用首字母缩写完成  hexo g --generate  hexo s --server  hexo d --deploy   2.写文章的需要用到下面的命令 hexo n">
 <meta property="og:type" content="article">
 <meta property="og:title" content="我的第一篇博客文章">
 <meta property="og:url" content="https://gyz2983089559.github.io/2019/08/29/我的第一篇博客文章/index.html">
 <meta property="og:site_name" content="Code Coulson">
-<meta property="og:description" content="1.Hexo的基本命令hexo generate –生成个人博客所需的静态页面 hexo server –本地预览 hexo deploy –部署我们的个人博客 hexo clean –清除缓存 这几个命令都能用首字母缩写完成 hexo g –generate hexo s –server hexo d –deploy 2.写文章的需要用到下面的命令hexo new “postName” –新建文">
+<meta property="og:description" content="1.Hexo的基本命令 hexo generate --生成个人博客所需的静态页面  hexo server --本地预览  hexo deploy --部署我们的个人博客  hexo clean --清除缓存  这几个命令都能用首字母缩写完成  hexo g --generate  hexo s --server  hexo d --deploy   2.写文章的需要用到下面的命令 hexo n">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-31T10:39:30.450Z">
+<meta property="og:updated_time" content="2019-09-05T12:59:51.111Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我的第一篇博客文章">
-<meta name="twitter:description" content="1.Hexo的基本命令hexo generate –生成个人博客所需的静态页面 hexo server –本地预览 hexo deploy –部署我们的个人博客 hexo clean –清除缓存 这几个命令都能用首字母缩写完成 hexo g –generate hexo s –server hexo d –deploy 2.写文章的需要用到下面的命令hexo new “postName” –新建文">
+<meta name="twitter:description" content="1.Hexo的基本命令 hexo generate --生成个人博客所需的静态页面  hexo server --本地预览  hexo deploy --部署我们的个人博客  hexo clean --清除缓存  这几个命令都能用首字母缩写完成  hexo g --generate  hexo s --server  hexo d --deploy   2.写文章的需要用到下面的命令 hexo n">
   
     <link rel="alternative" href="/atom.xml" title="Code Coulson" type="application/atom+xml">
   
@@ -183,46 +183,66 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="1-Hexo的基本命令"><a href="#1-Hexo的基本命令" class="headerlink" title="1.Hexo的基本命令"></a>1.Hexo的基本命令</h2><p>hexo generate –生成个人博客所需的静态页面</p>
-<p>hexo server –本地预览</p>
-<p>hexo deploy –部署我们的个人博客</p>
-<p>hexo clean –清除缓存</p>
-<p>这几个命令都能用首字母缩写完成</p>
-<p>hexo g –generate</p>
-<p>hexo s –server</p>
-<p>hexo d –deploy</p>
-<h2 id="2-写文章的需要用到下面的命令"><a href="#2-写文章的需要用到下面的命令" class="headerlink" title="2.写文章的需要用到下面的命令"></a>2.写文章的需要用到下面的命令</h2><p>hexo new “postName” –新建文章</p>
-<p>hexo new page “pageName” –新建页面</p>
-<h2 id="3-我们每次部署的步骤是"><a href="#3-我们每次部署的步骤是" class="headerlink" title="3.我们每次部署的步骤是"></a>3.我们每次部署的步骤是</h2><p>hexo clean</p>
-<p>hexo generate</p>
-<p>hexo deploy</p>
-<p>后两步可以简写为hexo g -d 或者 hexo d -g，另外我们也可以使用hexo help来查看hexo命令帮助</p>
-<h2 id="4-目录结构说明"><a href="#4-目录结构说明" class="headerlink" title="4.目录结构说明"></a>4.目录结构说明</h2><p>hexo init 出来的文件各自的作用如下:<br>|  +– .deploy      #hexo deploy生成的文件</p>
-<p>|  +– node_modules  #npm组件</p>
-<p>|  +– public        #生成的静态网页文件</p>
-<p>|  +–scaffolds      #模板</p>
-<p>|  +– source        #博客正文和其他源文件</p>
-<p>|  +– _posts    #我们自己写的文章以md结尾</p>
-<p>|  +– themes        #主题</p>
-<p>|  +– _config.yml  #全局配置文件</p>
-<p>|  +– package.json  #定义了hexo所需要的各种模块</p>
+        <h3 id="1-Hexo的基本命令"><a href="#1-Hexo的基本命令" class="headerlink" title="1.Hexo的基本命令"></a>1.Hexo的基本命令</h3><ul>
+<li><p><code>hexo generate --生成个人博客所需的静态页面</code></p>
+</li>
+<li><p><code>hexo server --本地预览</code></p>
+</li>
+<li><p><code>hexo deploy --部署我们的个人博客</code></p>
+</li>
+<li><p><code>hexo clean --清除缓存</code></p>
+</li>
+<li><p><strong>这几个命令都能用首字母缩写完成</strong></p>
+</li>
+<li><p><code>hexo g --generate</code></p>
+</li>
+<li><p><code>hexo s --server</code></p>
+</li>
+<li><p><code>hexo d --deploy</code></p>
+</li>
+</ul>
+<h3 id="2-写文章的需要用到下面的命令"><a href="#2-写文章的需要用到下面的命令" class="headerlink" title="2.写文章的需要用到下面的命令"></a>2.写文章的需要用到下面的命令</h3><ul>
+<li><p><code>hexo new &quot;postName&quot; --新建文章</code></p>
+</li>
+<li><p><code>hexo new page &quot;pageName&quot; --新建页面</code></p>
+</li>
+</ul>
+<h3 id="3-我们每次部署的步骤是"><a href="#3-我们每次部署的步骤是" class="headerlink" title="3.我们每次部署的步骤是"></a>3.我们每次部署的步骤是</h3><ul>
+<li><p>hexo clean</p>
+</li>
+<li><p>hexo generate</p>
+</li>
+<li><p>hexo deploy</p>
+</li>
+<li><p><strong>后两步可以简写为hexo g -d 或者 hexo d -g，另外我们也可以使用hexo help来查看hexo命令帮助</strong></p>
+</li>
+</ul>
 <a id="more"></a>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<h3 id="4-目录结构说明"><a href="#4-目录结构说明" class="headerlink" title="4.目录结构说明"></a>4.目录结构说明</h3><ul>
+<li><p><strong>hexo init 出来的文件各自的作用如下:</strong></p>
+<ul>
+<li><p><code>.deploy      #hexo deploy生成的文件</code></p>
+</li>
+<li><p><code>node_modules  #npm组件</code></p>
+</li>
+<li><p><code>public        #生成的静态网页文件</code></p>
+</li>
+<li><p><code>scaffolds      #模板</code></p>
+</li>
+<li><p><code>source        #博客正文和其他源文件</code></p>
+</li>
+<li><p><code>_posts    #我们自己写的文章以md结尾</code></p>
+</li>
+<li><p><code>themes        #主题</code></p>
+</li>
+<li><p><code>_config.yml  #全局配置文件</code></p>
+</li>
+<li><p><code>package.json  #定义了hexo所需要的各种模块</code></p>
+</li>
+</ul>
+</li>
+</ul>
 
       
 
@@ -325,6 +345,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2019/09/05/基于Hexo的个人博客网站搭建/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
   
   
     <a href="/2019/08/29/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
