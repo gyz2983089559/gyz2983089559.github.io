@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Code Coulson">
 <meta property="og:description" content="命令">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-17T10:53:23.905Z">
+<meta property="og:updated_time" content="2019-09-17T11:01:02.746Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux命令">
 <meta name="twitter:description" content="命令">
@@ -187,6 +187,7 @@
         <h3 id="一、Linux常用的25个命令"><a href="#一、Linux常用的25个命令" class="headerlink" title="一、Linux常用的25个命令"></a>一、Linux常用的25个命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">1.cd命令：切换当前目录 绝对路径相对路径 </span><br><span class="line">2.ls命令：查看文件和目录</span><br><span class="line">3.grep命令：用于分析一行的信息</span><br><span class="line">4.find命令：基于查找功能</span><br><span class="line">5.cp命令：用于复制文件 copy之意</span><br><span class="line">6.mv命令：用于移动文件、目录或更名，move之意（剪切可重命名）</span><br><span class="line">7.rm命令：用于删除文件或目录，remove之意</span><br><span class="line">8.ps命令：用于将某个时间点的进程运行情况选取下来并输出，process之意</span><br><span class="line">9.kill命令：用于向某个工作（%jobnumber）或者是某个PID（数字）传送一个信号，它通常与ps和jobs命令一起使用</span><br><span class="line">10.killall命令：用于向一个命令启动的进程发送一个信号</span><br><span class="line">11.file命令：用于判断接在file命令后的文件的基本数据</span><br><span class="line">12.tar命令：用于对文件进行打包，默认情况并不会压缩，如果指定了相应的参数，它还会调用相应的压缩程序（如gzip和bzip等）进行压缩和解压。</span><br><span class="line">13.cat命令：用于查看文本文件的内容，后接要查看的文件名，通常可用管道与more和less一起使用，从而可以一页页地查看数据。</span><br><span class="line">14.cahgrp命令：用于改变文件所属用户组</span><br><span class="line">15.chown命令：用于改变文件的所有者，与chgrp命令的使用方法相同，只是修改的文件属性不同</span><br><span class="line">16.chmod命令：用于改变文件的权限</span><br><span class="line">17.pwd命令：用于查看当前文件路径</span><br><span class="line">18.vim命令：用于文本编辑，它接一个或多个文件名作为参数，如果文件存在就打开，如果文件不存在就以该文件名创建一个文件。</span><br><span class="line">19.gcc命令：用于把C语言的源程序文件，编译成可执行程序</span><br><span class="line">20.time命令：用于测算一个命令（即程序）的执行时间。</span><br><span class="line">21.mkdir命令：用于创建文件夹、目录</span><br><span class="line">22.touch 创建文件</span><br><span class="line">23.rename 修改文件名</span><br><span class="line">24.su 切换用户</span><br><span class="line">25.ifconfig 查看IP信息</span><br></pre></td></tr></table></figure>
 
 <a id="more"></a>
+
 <h3 id="1-cd命令"><a href="#1-cd命令" class="headerlink" title="1.cd命令"></a>1.cd命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1）cd：进入当前用户的家目录</span><br><span class="line">2）cd ~：进入当前用户的家目录</span><br><span class="line">4）cd .：进入当前目录</span><br><span class="line">5）cd ..：进入当前目录的父目录，返回上层目录</span><br><span class="line">6）cd /：进入系统根目录</span><br><span class="line">7）cd –：回到刚才所在的目录</span><br><span class="line">8）cd /temp：进入指定目录/temp（后面加路径）</span><br></pre></td></tr></table></figure>
 
 <h3 id="2-ls命令"><a href="#2-ls命令" class="headerlink" title="2.ls命令"></a>2.ls命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">1）ls -a：显示所有文件及目录 (ls内定将文件名或目录名称开头为&quot;.&quot;的视为隐藏档，不会列出)</span><br><span class="line">2）ls -l：除文件名称外，亦将文件型态、权限、拥有者、文件大小等资讯详细列出</span><br><span class="line">3）ls -l -a：列出当前目录的全部文件和文件夹的基本属性和详细信息，等同于 ls -la</span><br><span class="line">4）ls -r：将文件以相反次序显示(原定依英文字母次序)</span><br><span class="line">5）ls -t：将文件依建立时间之先后次序列出</span><br><span class="line">6）ls -A：同 -a ，但不列出 &quot;.&quot; (目前目录) 及 &quot;..&quot; (父目录)</span><br><span class="line">7）ls -F：在列出的文件名称后加一符号；例如可执行档则加 &quot;*&quot;, 目录则加 &quot;/&quot;</span><br><span class="line">8）ls -R：若目录下有文件，则以下之文件亦皆依序列出</span><br><span class="line">9）ls /：列出根目录(\)下的所有目录</span><br><span class="line">10）ls s*：列出以s开头的文件和文件夹</span><br><span class="line">11）ls -l s*：列出目前工作目录下所有名称是 s 开头的文件，越新的排越后面 </span><br><span class="line">12）ls -lR /bin：将 /bin 目录以下所有目录及文件详细资料列出 </span><br><span class="line">13）ls -AF：列出目前工作目录下所有文件及目录；目录于名称后加 &quot;/&quot;, 可执行档于名称后加 &quot;*&quot; </span><br><span class="line">14）ls --help：列出 ls 命令的帮助内容</span><br></pre></td></tr></table></figure>
@@ -1303,11 +1304,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">hexo命令</a>
+                <a href="javascript:void(0)" class="js-tag color5">博客搭建</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">博客搭建</a>
+                <a href="javascript:void(0)" class="js-tag color2">hexo命令</a>
               </li>
              
               <li class="article-tag-list-item">
